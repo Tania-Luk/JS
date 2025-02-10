@@ -28,10 +28,21 @@ console.log(c[0],c[3]);
 // 7. замінити кожне число кратне 3 на слово "okten"
 // 8. вивести масив в зворотньому порядку.
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-debugger;
+// debugger;
 let users=[2,17,13,6,22,31,45,66,100,-18];
-    while(users < users.length) {
-    let user = users[0];
+// let i=0;
+// while(i < users.length) {
+//     let user = users[i];
+//     console.log(user);
+//     i++;
+// }
+// for ( let i=0; i<users.length; i++){
+//     let user=users[i];
+//     console.log(user);
+// }
+let i=0;
+while(i < users[0]) {
+    let user = users[i];
     console.log(user);
-    d++;
+    i++;
 }

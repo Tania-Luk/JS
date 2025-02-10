@@ -10,12 +10,10 @@ let arr=[1,2,3,4,5,6,7,8,9,10];
     console.log(arr[7]);
     console.log(arr[8]);
     console.log(arr[9]);
-
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 let book1={title: 'Bible', pageCount: 999, genre: 'religion'}
 let book2={title: 'Wind', pageCount: 432, genre: 'adventure'}
 let book3={title: 'Tom', pageCount: 123, genre: 'kids'}
-
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 let book4={
     title: 'Bible',
@@ -67,7 +65,6 @@ let thursday={morning:3, afternoon:10, evening: 2};
 let friday={morning:0, afternoon:7, evening: 4};
 let saturday={morning:1, afternoon:13, evening: 6};
 let sunday={morning:4, afternoon:14, evening: 5};
-
 // - Є змінна х, якій ви надаєте довільне числове значення.
 //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 let x=22;
@@ -82,7 +79,6 @@ else{console.log('Невірно');}
 let c=-3;
 if(c!==0){console.log('Вірно');}
 else{console.log('Невірно');}
-
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 let time=15;
