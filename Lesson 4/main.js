@@ -28,7 +28,7 @@ function users (array) {
 // #59g0IsA
 // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумен
 function text(paragraf){
-    document.write(`<p>${paragraf}</p>`);
+    document.write (`<p>${paragraf}</p>`);
 }
 text('lorem ipsum');
 // #hOL6126
@@ -48,7 +48,7 @@ list ('hello');
 function playlist (li,number){
     document.write(`<ul>`);
     for (let i=0; i<number; i++){
-            document.write(`<li>${li}</li>`)
+        document.write(`<li>${li}</li>`)
     }
     document.write(`</ul>`)
 }
@@ -62,12 +62,12 @@ function elements (primitivElements){
     }
     document.write(`</ul>`)
 }
-    elements( 123, 'ghju', true, false);
+    elements ( 123, 'ghju', true, false);
 // #bovDJDTIjt
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 function foobar (users) {
     for (const user of users){
-        document.write(`<div>${user.id} ${user.name} ${user.age} </div>`);
+        document.write (`<div>${user.id} ${user.name} ${user.age} </div>`);
     }
 }
 foobar ([
@@ -78,9 +78,10 @@ foobar ([
 ])
 //     #pghbnSB
 // - створити функцію яка повертає найменьше число з масиву
-function arraymin (numbers){
+
+function arrmin (numbers){
     let min = numbers[0];
-    for (let i =1, i< numbers.length, i++){
+    for (let i =1, i<numbers.length, i++){
         let number = numbers[i];
         if (number < min) {
             min=number
@@ -112,6 +113,7 @@ console.log( swap([11,22,33,44],0,1));
 // #mkGDenYnNjn
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
+
 function exchange(sumUAH,currencyValues,exchangeCurrency) {
     let choosenCurrency;
     for(const item of currencyValues){
@@ -123,3 +125,4 @@ function exchange(sumUAH,currencyValues,exchangeCurrency) {
 }
 }
 console.log(exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD'))
+
