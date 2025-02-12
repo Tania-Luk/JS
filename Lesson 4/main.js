@@ -11,19 +11,59 @@ console.log(number)
 function circlesquare (r) {
     return 3.14*r*r;
 }
+circlesquare ();
 // #Mbiz5K4yFe7
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-
+function cylindersquare (h, r) {
+    return 2*3.14*r*h;
+}
+cylindersquare ();
 // #SIdMd0hQ
 // - створити функцію яка приймає масив та виводить кожен його елемент
+function users (array) {
+    for  (const item of array) {
+        cosole.log(item)
+    }
+}
+debugger;
 // #59g0IsA
-// - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
+// - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумен
+function text(paragraf){
+    document.write(`<p>${paragraf}</p>`);
+}
+text('lorem ipsum');
 // #hOL6126
 // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
+function list (li){
+    document.write(
+        `<ul>
+            <li>${li}</li>
+            <li>${li}</li>
+            <li>${li}</li>
+        </ul>`)
+}
+list ('hello');
 // #0Kxco1edSN
 // - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
+
+function playlist (li,number){
+    document.write(`<ul>`);
+    for (let i=0; i<number; i++){
+            document.write(`<li>${li}</li>`)
+    }
+    document.write(`</ul>`)
+}
+playlist ('JS', 8);
 // #gEFoxMMO
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
+function elements (primitivElements){
+    document.write(`<ul>`);
+    if (primitivElements === number){
+        document.write (``)
+    }
+        document.write(`<li>${primitivElements}</li>`)
+    }
+    document.write(`</ul>`)
 // #bovDJDTIjt
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 //     #pghbnSB
