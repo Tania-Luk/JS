@@ -14,6 +14,9 @@
 let s='hello world';
 const s1 =s.toApperCase();
 console.log(s1);
+// let s='lorem ipsum';
+// const s1 =s.toApperCase();
+// console.log(s1);
 // #ClDsAm7xba7
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
