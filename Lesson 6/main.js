@@ -121,8 +121,7 @@ for (const suit of suits){
         const card = { cardSuit: suit, value: value}
         if (suit === 'heart' || suit ==='diamond' ){
             card.color = 'red'
-        } else(suit === 'spade' || suit === 'clubs' )
-        {
+        } else {
             card.color = 'black'
         }
         cards.push(card);
