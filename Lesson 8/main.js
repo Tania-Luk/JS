@@ -12,7 +12,7 @@ let course = {
         }
 }
 let courseCopy=JSON.stringify(course);
-
+let parse =JSON.parse(JSON.stringify(course));
 console.log(courseCopy)
 if (course.monthDuration === 0){
     console.log ('null');
