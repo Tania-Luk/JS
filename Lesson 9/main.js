@@ -62,14 +62,16 @@ let coursesAndDurationArray = [
 //     Завдання робити через цикли.
 
 for (const course of coursesAndDurationArray){
-    let div=document.createElement('div');
-    div.classList.add('item');
-        for (const course of coursesAndDurationArray){
-            let h1=document.createElement ('h1');
-            h1.classList.add('heading');
-            // h1.innerText ='${course.title}';
-            let p = document.createElement ('p');
-            p.classList.add('description');
-            // p.innerText= `${course.monthDuration}'
-        }
+        let div=document.createElement('div');
+        div.classList.add('item');
+
+        let h1=document.createElement ('h1');
+        h1.classList.add('heading');
+        h1.innerText = course.title ;
+        let p = document.createElement ('p');
+        p.classList.add('description');
+        p.innerText= course.monthDuration;
+        div.append (h1, p);
+
+        document.body.appendChild(div);
 }
