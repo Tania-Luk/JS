@@ -1,48 +1,87 @@
-// #WpkK0ZH1
-// --створити масив з:
-//     - з 5 числових значень
-// - з 5 стічкових значень
-// - з 5 значень стрічкового, числового та булевого типу
-// - та вивести його в консоль
+// #dFeorS3m7u
+// - Знайти та вивести довижину настипних стрінгових значень 'lorem ipsum','javascript is cool'
+// let str ='hello world'
+// console.log(str.length)
 
-let arr=[1,2,3,4,5];
-console.log(arr);
-let a=['a','b','c','d','e'];
-console.log(a);
-let b =[1,2,'a',true,false];
-console.log(b);
-
-// #4aDbSgh
-// -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу.
-//     Вивести в консоль
-let c=[1,2,'s','q'];
-console.log(c[0],c[3]);
-// #qLQLJSeN7i
-// - є масив [2,17,13,6,22,31,45,66,100,-18] :
-// 1. перебрати його циклом while
-//     2. перебрати його циклом for
-//     3. перебрати циклом while та вивести  числа тільки з непарним індексом
-// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
-// 5. перебрати циклом while та вивести  числа тільки парні  значення
-// 6. перебрати циклом for та вивести  числа тільки парні  значення
-// 7. замінити кожне число кратне 3 на слово "okten"
-// 8. вивести масив в зворотньому порядку.
-// 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-// debugger;
-let users=[2,17,13,6,22,31,45,66,100,-18];
-// let i=0;
-// while(i < users.length) {
-//     let user = users[i];
-//     console.log(user);
-//     i++;
+// #8lld9HMxXWB
+// - Перевести до великого регістру наступні стрінгові значення
+// 'hello world', 'lorem ipsum', 'javascript is cool'
+// let str ='hello world'
+// console.log(str.toUpperCase())
+// #ClDsAm7xba7
+// - Перевести до нижнього регістру настипні стрінгові значення
+// 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
+// let str ='HELLO WORLD'
+// console.log(str.toLowerCase())
+// #0b89BkYZwu
+// - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+// let str = ' dirty string   '
+// console.log(str.trim())
+//     #bfoJuse4ZzP
+// - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+//     let str = 'Ревуть воли як ясла повні';
+// let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+//     function stringToarray(str){
+//         if(str){
+//             let split = str.split(' ');
+//             return split;
+//         }
+//         return [' ']
+//     }
+// console.log(stringToarray('asd jlj jhg hjk' ))
+// #Rbr5kEQ
+// - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
+// let numbers=[10,8,-7,55,987,-1011,0,1050,0]
+// let string=numbers.map(number=> number+'');
+// console.log(string)
+// // #5hqyKTfmc
+// - створити функцію sortNums(array,direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+//     let nums = [11,21,3];
+// sortNums(nums,'ascending') // [3,11,21]
+// sortNums(nums,'descending') // [21,11,3]
+const sortNums=(array,direction)=>
+//
+// ==========================
+// #yo06d74c1C
+// - є масив
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// -- відсортувати його за спаданням за monthDuration
+// -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+// -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
+// =========================
+//     #bolvdlhP
+// описати колоду карт (від 6 до туза без джокерів)
+// - знайти піковий туз
+// - всі шістки
+// - всі червоні карти
+// - всі буби
+// - всі трефи від 9 та більше
+//
+// {
+//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//         value: '', // '6'-'10', 'ace','jack','queen','king'
+//     color:'', // 'red','black'
 // }
-// for ( let i=0; i<users.length; i++){
-//     let user=users[i];
-//     console.log(user);
+//
+// =========================
+//
+//     #EP5I1UUzAX
+// Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
+// {
+//     spades:[],
+//         diamonds:[],
+//     hearts:[],
+//     clubs:[]
 // }
-let i=0;
-while(i < users[0]) {
-    let user = users[i];
-    console.log(user);
-    i++;
-}
+// =========================
+// #4LJn7zBx
+// взяти з arrays.js масив coursesArray
+// --написати пошук всіх об'єктів, в яких в modules є sass
+// --написати пошук всіх об'єктів, в яких в modules є docker
